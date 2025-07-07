@@ -1,5 +1,8 @@
+import { useParams } from 'react-router-dom';
+
 function Profile() {
-    return ( <h2>Profile page</h2> );
+  const { nickname } = useParams();
+  return <h2>Trang cá nhân của @{nickname}</h2>;
 }
 
 export default Profile;
